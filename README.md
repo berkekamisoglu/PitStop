@@ -126,7 +126,7 @@ Maven 3.6+
 Backend Setup
 Clone the repository
 bash
-git clone https://github.com/yourusername/pitstop.git
+git clone https://github.com/berkekamisoglu/pitstop.git
 cd pitstop/backend
 Configure database in application.properties
 properties
