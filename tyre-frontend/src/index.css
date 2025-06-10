@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Marker stilleri */
+.custom-marker {
+    transition: all 0.3s ease;
+}
+
+.custom-marker:hover {
+    transform: scale(1.1) translateY(-5px);
+    z-index: 1000 !important;
+}
+
+/* Zoom seviyesine göre marker boyutlandırma */
+.leaflet-zoom-animated {
+    transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+}
+
+.leaflet-zoom-level-13 .custom-marker div,
+.leaflet-zoom-level-14 .custom-marker div,
+.leaflet-zoom-level-15 .custom-marker div {
+    transform: scale(1.1);
+}
+
+.leaflet-zoom-level-16 .custom-marker div,
+.leaflet-zoom-level-17 .custom-marker div,
+.leaflet-zoom-level-18 .custom-marker div {
+    transform: scale(1.2);
+}
+
+.leaflet-zoom-level-19 .custom-marker div,
+.leaflet-zoom-level-20 .custom-marker div {
+    transform: scale(1.3);
+}
+
+/* Hover efekti için z-index ayarı */
+.leaflet-marker-icon {
+    transition: all 0.3s ease !important;
+}
+
+.leaflet-marker-icon:hover {
+    z-index: 1000 !important;
+}
+
+/* Marker gölge efekti */
+.custom-marker div {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.custom-marker:hover div {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
