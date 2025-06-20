@@ -25,8 +25,8 @@ This project provides a comprehensive digital solution for roadside tire assista
 
 * Java 17+
 * Node.js 18+
-* SQL Server
-* Google Maps API Key
+* MYSQL Server
+* Leaflet Maps API Key
 
 ### Installation
 
@@ -78,9 +78,6 @@ Feel free to open issues and submit pull requests. For major changes, please dis
 
 Contact: **[berkekamisoglu1@gmail.com](mailto:berkekamisoglu1@gmail.com)**
 
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for more details.
 
 ---
 
